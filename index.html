@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Профиль</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main>
+    <!--ВКЛАДКИ-->
+    <ul class="tabs">
+        <li class="active"><a href="#tab1">Профиль</a></li>
+        <li><a href="#tab2">Друзья пользователя</a></li>
+    </ul>
+    <!--СОДЕРЖАНИЕ ПЕРВОЙ ВКЛАДКИ-->
+    <div id="tab1" class="tab active">
+        <section class="profile">
+            <div class="avatar"></div>
+            <button>Добавить в друзья</button>
+            <button id="int_but">Добавить интерес</button>
+            <input type="text" id="itemDescription" placeholder="Добавьте интерес"/>
+        </section>
+        <section class="main_info">
+            <h1 id="name">Виталя Гора</h1>
+            <input type="text" id="usrName"/>
+            <p>г. Нижние Шахты</p>
+            <table>
+                <tbody>
+                <tr>
+                    <td><b>Семейное положение</b></td>
+                    <td>холост</td>
+                </tr>
+                <tr>
+                    <td><b>Телефон</b></td>
+                    <td id="tel">+79850280209</td>
+                    <td><input type="tel" id="telNum"/></td>
+                </tr>
+                <tr>
+                    <td><b>E-mail</b></td>
+                    <td id="email">yandex@mail.ru</td>
+                    <td><input type="email" id="mailbox"/></td>
+
+                </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="interests">
+            <h1>Интересы</h1>
+            <ul id="add">
+                <li>музыка</li><li>кино</li><li>игры</li>
+            </ul>
+        </section>
+    </div>
+    <!--СОДЕРЖАНИЕ ВТОРОЙ ВКЛАДКИ-->
+    <div id="tab2" class="tab">
+        <ul class="friends">
+            <li><img src="images/1.png" alt="Лев"><section><h1>Лев Бронштейн</h1><p>г. Ханты-Мансийск</p><span>Online</span></section></li
+            ><li><img src="images/2.png"><section><h1>Находка Капитал</h1><p>г. Усть-Бельск</p></section></li
+        ><li><img src="images/4.png"><section><h1>Яндекс Петренко</h1><p>г. Пермь</p></section></li
+        ><li><img src="images/5.png"><section><h1>Успех Возможностей</h1><p>г. Радонеж</p><span>Online</span></section></li
+        ><li><img src="images/6.png"><section><h1>Инна Нашлась</h1><p>г. Омск</p><span>Online</span></section></li
+        ><li><img src="images/7.png"><section><h1>Алла Подольская</h1><p>г. Петропавловск-Камчатский</p><span>Online</span></section></li>
+        </ul>
+    </div>
+</main>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

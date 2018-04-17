@@ -1,0 +1,258 @@
+body {
+    background-color: rgb(225, 225, 225);
+    margin: 100px 25% 25% 25%;
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Оформление вкладок*/
+/* Clearfix */
+.tabs:after {
+    display:table;
+    clear:both;
+    content:'';
+}
+.tabs li {
+    margin:0px 10px 0px 0px;
+    float:left;
+    list-style:none;
+}
+
+.tabs {
+    margin: 0;
+    padding: 0;
+}
+
+.tabs a {
+    padding:9px 15px;
+    display:inline-block;
+    border-radius:5px 5px 0px 0px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration:none;
+    text-shadow: 1px -1px #000, 0 1px 0 #000;
+    background: rgb(32,124,202);
+    background: -moz-linear-gradient(top, rgba(32,124,202,1) 20%, rgba(32,124,202,1) 34%, rgba(30,87,153,1) 75%);
+    background: -webkit-linear-gradient(top, rgba(32,124,202,1) 20%,rgba(32,124,202,1) 34%,rgba(30,87,153,1) 75%);
+    background: linear-gradient(to bottom, rgba(32,124,202,1) 20%,rgba(32,124,202,1) 34%,rgba(30,87,153,1) 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207cca', endColorstr='#1e5799',GradientType=0 );
+}
+
+.tabs a:hover {
+    background:#a7cce5;
+    text-decoration:none;
+}
+
+li.active a, li.active a:hover {
+    background:#fff;
+    color: black;
+    text-shadow: none;
+}
+.tab {
+    display:none;
+    background-color: #ffffff;
+    padding:10px 30px 15px 15px;
+    border-radius:0px 3px 3px 3px;
+    box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+    height: 265px;
+    overflow-y: scroll;
+    width: 488px;
+}
+.tab.active {
+    display: block;
+}
+
+/******************  Аватарка  ***********************/
+
+.profile {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.avatar {
+    display: block;
+    width: 130px;
+    height: 170px;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-image: url("../images/UserPic.png");
+}
+
+button {
+    display: block;
+    width: 132px;
+    border-radius: 3px;
+    padding: 7px 0;
+    margin-top: 2px;
+    color: white;
+    font-size: 12px;
+    background-image: url(../images/Button.png);
+}
+
+/*******************  имя и город   **********************/
+.main_info {
+    display: block;
+    float: left;
+}
+
+.main_info h1 {
+    font-size: 23px;
+    font-weight: normal;
+    width: 300px;
+    margin: 10px 0px 0px 0px;
+    word-break: break-all;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+.main_info p {
+    font-size: 11px;
+    padding: 0px;
+    margin: 0px;
+    color: #c5c5c5;
+
+}
+
+#usrName {
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+/*******************   ТАБЛИЦА  ***********************/
+
+table {
+    border-collapse: collapse;
+    margin: 20px 0 15px 0;
+    font-size: 12px;
+    display: table;
+    width: 285px;
+    height: 75px;
+}
+
+tr {
+    display: table-row;
+}
+
+td {
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    width: 50%;
+    height: 25px;
+}
+
+#telNum, #mailbox {
+    display: none;
+    width: 90%;
+}
+
+
+ /***************** ИНТЕРЕСЫ *************************/
+
+.interests{
+    display: block;
+    float: left;
+    width: 285px;
+}
+
+.interests h1 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.interests ul {
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+.interests li {
+    list-style: none;
+    display: inline-block;
+    font-size: 12px;
+    color: #1574af;
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    padding: 5px 10px;
+    margin: 0px 5px 5px 0;
+    word-break: break-all;
+}
+
+.interests li:hover {
+    color: black;
+    background: lightgrey;
+    cursor: pointer;
+}
+
+#itemDescription {
+    display: none;
+    margin: 5px 0 5px 3px ;
+    width: 123px;
+    height: 15px;
+}
+
+/*********************  Список друзей ****************************/
+.friends {
+    padding: 0;
+    margin: 0;
+}
+
+.friends li {
+    list-style: none;
+    display: inline-block;
+    width: 50%;
+    height: 90px;
+}
+
+.friends img {
+    float: left;
+    margin-top: 5px;
+}
+
+.friends section {
+    float: left;
+    margin: 5px 0px 10px 10px;
+    width: 150px;
+}
+
+.friends h1 {
+    font-size: 13px;
+    color: rgb(32,124,202);
+    text-decoration: underline;
+    font-weight: 600;
+    margin: 0 0 3px 0;
+}
+.friends p {
+    color: black;
+    font-size: 11px;
+    margin: 0 0 15px 0;
+}
+
+.friends span {
+    color: green;
+    font-style: italic;
+    font-size: 10px;
+}
+/*************************************************/
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgb(32,124,202);
+}

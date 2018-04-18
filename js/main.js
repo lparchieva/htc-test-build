@@ -1,15 +1,10 @@
-localStorage.clear();
-
 if(localStorage.getItem('number') != null) {
-// document.getElementById('tel').textContent=localStorage.getItem('number');
 $('#tel').text(localStorage.getItem('number'));
 }
 if(localStorage.getItem('name') != null) {
-// document.getElementById('tel').textContent=localStorage.getItem('number');
 $('#name').text(localStorage.getItem('name'));
 }
 if(localStorage.getItem('mail') != null) {
-// document.getElementById('tel').textContent=localStorage.getItem('number');
 $('#email').text(localStorage.getItem('mail'));
 }
 
@@ -24,12 +19,12 @@ $('#email').text(localStorage.getItem('mail'));
 
 //Изменение имени
 $(function() {
-    var $a = $('.main_info h1');
+    var $a = $('#name');
     var $b = $('#usrName');
 
     $a.on('click', function(){
         $a.hide();
-        $b.attr('value', $a.text()); //get value of an attribute
+        $b.attr('value', $a.text());
         $b.show();
         $b.focus();
     });
@@ -37,11 +32,11 @@ $(function() {
 //Изменение введенного имени
         $b.on('blur', function (e) {
             e.preventDefault();
-            var $newName = $b.val(); // Получаем значение текстового поля
+            var $newName = $b.val();
             if($newName === "") {
                 alert('Введите имя пользователя');
             } else {
-                $a = $a.text($newName); //sets or returns the text content of the selected elements.
+                $a = $a.text($newName);
                 localStorage.setItem('name', $a.text());
                 $a.show();
                 $b.hide();
@@ -114,13 +109,11 @@ $(function() {
     $list = $('#add');
     $newInterestForm = $('#itemDescription');
     $newInterestButton = $('#int_but');
-    var $hideButton = $('#hide')
 
 // Появление формы
     $newInterestButton.on('click', function() {
         $newInterestButton.hide();
         $newInterestForm.show();
-        $hideButton.show();
         $newInterestForm.focus();
 
     });
